@@ -29,16 +29,37 @@
 // else Console.WriteLine("Число {0} не четное",number);
 
 // Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
-Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
 
-int i = 1;
+// int i = 1;
 
-while (i <= number)
+// while (i <= number)
+// {
+//     if (i % 2 == 0)
+//     {
+//         Console.Write(i + " ");
+//     }
+//     i++;
+// }
+
+// Задача 7 HARD по желанию - идет за 2 необязательных 
+// Напишите программу, которая принимает на вход целое число любой разрядности и на выходе показывает третью цифру слева этого числа или говорит, что такой цифры нет.
+// Через строку решать нельзя.
+Console.Write("Введите любое число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+num = Math.Abs(num);
+
+if (num >= 100)
 {
-    if (i % 2 == 0)
+    while (num > 999)
     {
-        Console.Write(i + " ");
+        num = num /10;
     }
-    i++;
+    int result = num % 10;
+    Console.Write(result);
+}
+else
+{
+    Console.Write("Введенное число меньше 100");
 }
