@@ -36,6 +36,8 @@ int number = Convert.ToInt32(Console.ReadLine());
 if (number % 2 == 0) Console.WriteLine("Число {0} четное",number);
 else Console.WriteLine("Число {0} не четное",number);
 
+
+
 // Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
 Console.Write("Введите число: ");
