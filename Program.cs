@@ -22,8 +22,23 @@
 // Console.WriteLine("Максимальное число - {0}",result);
 
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+// Console.Write("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// if (number % 2 == 0) Console.WriteLine("Число {0} четное",number);
+// else Console.WriteLine("Число {0} не четное",number);
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number % 2 == 0) Console.WriteLine("Число {0} четное",number);
-else Console.WriteLine("Число {0} не четное",number);
+int i = 1;
+
+while (i <= number)
+{
+    if (i % 2 == 0)
+    {
+        Console.Write(i + " ");
+    }
+    i++;
+}
