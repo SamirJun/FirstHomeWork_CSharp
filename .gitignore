@@ -399,3 +399,6 @@ FodyWeavers.xsd
 
 # .csproj file ignore
 *.csproj
+
+# .gitignore file ignore
+*.gitignore
